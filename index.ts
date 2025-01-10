@@ -17,8 +17,12 @@ app.get("/analyze", async (req: Request, res: Response) => {
     const response = await runAIFlow(post_type);
   
     res.status(200).json({ response });
-  });
-  
-  app.listen(PORT, () => {
-    console.log("Server is listening in the port " + PORT);
-  });
+});
+
+// Export the app for Vercel
+export default app;
+
+// Uncomment this if you want to run locally
+// app.listen(PORT, () => {
+//   console.log("Server is listening in the port " + PORT);
+// });
