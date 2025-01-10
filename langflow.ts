@@ -78,7 +78,7 @@ class LangflowClient {
     }
 }
 
-export async function runAIFlow(inputValue:string, inputType = 'chat', outputType = 'chat', stream = false) {
+export async function runAI(inputValue:string, inputType = 'chat', outputType = 'chat', stream = false) {
     const flowIdOrName = '5627f16b-b5d1-4129-9b3e-f74bbe8e5f24';
     const langflowId = '704be004-4e8b-47da-b9c9-6d2a663b63c5';
     const applicationToken = process.env.LF_TOKEN;
