@@ -23,6 +23,6 @@ app.get("/analyze", async (req: Request, res: Response) => {
 export default app;
 
 // Uncomment this if you want to run locally
-// app.listen(PORT, () => {
-//   console.log("Server is listening in the port " + PORT);
-// });
+app.listen(PORT, () => {
+  console.log("Server is listening in the port " + PORT);
+});
